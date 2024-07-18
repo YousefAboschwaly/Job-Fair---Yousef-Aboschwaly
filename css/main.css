@@ -1,0 +1,25 @@
+h1{
+      background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    color: transparent;
+    background-clip: text;
+}
+table{
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+
+ thead th{
+  background-color:  #009879 !important;
+  border: 1px solid #ccc;
+  padding: 10px 0;
+}
+ tbody td{
+  border: 1px solid #ccc;
+  padding: 5px 0;
+}
+
+.cusId{
+  color:#00265c;
+  font-weight: bold;
+}

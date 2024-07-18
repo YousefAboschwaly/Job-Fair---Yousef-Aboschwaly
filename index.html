@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container py-5 text-center">
+  <h1>Customer & Transaction Data</h1>
+
+  <div class="form py-5">
+    <input type="text" name="Customer-Name" id="Customer-Name" class="form-control mb-4 py-2" placeholder="Filter By Customer Name" oninput="searchCustomerName(this.value)">
+
+    <input type="number" name="Transaction-Amount" id="Transaction-Amount" class="form-control py-2" placeholder="Filter By Transaction Amount" min="0" oninput="searchTransactionAmount(this.value)">
+    <button class="btn btn-outline-success my-4" onclick="sortByName()">Sort By Name</button>
+  </div>
+
+
+  <div class="data">
+    <table class="w-100">
+      <thead>
+        <tr>
+          <th>Customer ID</th>
+          <th>Customer Name</th>
+          <th>Transaction Number</th>
+          <th>Transaction Amount</th>
+          <th>Transaction Date</th>
+        </tr>
+      </thead>
+      <tbody class="rowData"></tbody>
+    </table>
+  </div>
+
+
+<div class="mt-5">
+  <canvas id="myChart"></canvas>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
